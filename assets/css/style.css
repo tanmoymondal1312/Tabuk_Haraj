@@ -950,7 +950,7 @@ p:last-child { margin-bottom: 0; }
   .contact-layout { grid-template-columns: 1fr; }
   .location-layout { grid-template-columns: 1fr; }
 
-  .whatsapp-float { bottom: 18px; right: 18px; width: 50px; height: 50px; }
+  .whatsapp-float { bottom: 22px; right: 18px; width: 50px; height: 50px; margin-bottom: 4px; }
   .whatsapp-float svg { width: 28px; height: 28px; }
   #scroll-top { bottom: 82px; left: 18px; }
   #scroll-top     { bottom: 18px; left: 18px; }
