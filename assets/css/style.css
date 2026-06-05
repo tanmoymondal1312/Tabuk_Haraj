@@ -82,12 +82,12 @@ p:last-child { margin-bottom: 0; }
 .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 
 .btn-primary {
-  background: linear-gradient(to right, #06c49e, #037a62);
+  background: linear-gradient(to bottom, #06c09a 0%, #038268 100%);
   color: var(--color-white);
   border-color: transparent;
 }
 .btn-primary:hover, .btn-primary:focus-visible {
-  background: linear-gradient(to right, #07d4aa, #036858);
+  background: linear-gradient(to bottom, #07cfa6 0%, #03715a 100%);
   border-color: transparent;
   box-shadow: 0 8px 28px rgba(4,159,130,0.42);
   transform: translateY(-2px);
