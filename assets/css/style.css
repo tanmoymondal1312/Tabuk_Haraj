@@ -234,19 +234,21 @@ p:last-child { margin-bottom: 0; }
 /* ─── 7. HERO ────────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #0c1e1a;
+  margin-top: -80px;      /* slide under sticky header so image starts at top of viewport */
+  padding-top: 80px;      /* push content down so it's not hidden behind header */
 }
 .hero-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center 60%;
-  opacity: 0.42;
+  background-position: 50% 50%;
+  opacity: 0.58;
   will-change: transform;
 }
 .hero-content {
@@ -849,7 +851,7 @@ p:last-child { margin-bottom: 0; }
   .header-inner  { min-height: 65px; }
   #mobile-drawer { top: 65px; height: calc(100vh - 65px); }
 
-  .hero          { min-height: 75vh; }
+  .hero          { min-height: 100vh; margin-top: -65px; padding-top: 65px; }
   .hero-cta      { flex-direction: column; align-items: center; }
 
   .services-grid { grid-template-columns: repeat(2,1fr); gap: 1rem; }
