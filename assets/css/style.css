@@ -329,6 +329,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--color-primary);
 }
 .svc-icon svg { width: 30px; height: 30px; }
+.svc-icon img { width: 36px; height: 36px; object-fit: contain; }
 .service-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--color-dark); }
 .service-card p  { font-size: 0.88rem; color: var(--color-muted); line-height: 1.55; }
 
