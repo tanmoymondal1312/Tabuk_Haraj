@@ -247,7 +247,7 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background-size: cover;
   background-position: 50% 50%;
-  opacity: 0.58;
+  opacity: 0.88;
   will-change: transform;
 }
 .hero-content {
