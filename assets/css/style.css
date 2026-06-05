@@ -22,7 +22,7 @@
   --radius-btn:         999px;
   --radius-card:        12px;
   --ease:               0.28s ease;
-  --section-py:         5rem;
+  --section-py:         3.5rem;
   --shadow-card:        0 4px 24px rgba(0,0,0,0.07);
   --shadow-card-hover:  0 12px 36px rgba(4,159,130,0.15);
 }
@@ -234,14 +234,12 @@ p:last-child { margin-bottom: 0; }
 /* ─── 7. HERO ────────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #0c1e1a;
-  margin-top: -80px;      /* slide under sticky header so image starts at top of viewport */
-  padding-top: 80px;      /* push content down so it's not hidden behind header */
 }
 .hero-bg {
   position: absolute;
@@ -254,33 +252,37 @@ p:last-child { margin-bottom: 0; }
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 3rem var(--pad-x);
-  max-width: 920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  padding: 2rem var(--pad-x);
+}
+
+/* ── Dark semi-transparent box behind hero text (like cloned site) ── */
+.hero-text-box {
+  background: rgba(34, 34, 34, 0.61);
+  padding: 2.75rem 3rem;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
 }
 .hero h1 {
   color: var(--color-yellow);
-  font-size: clamp(1.75rem, 4.5vw, 3.2rem);
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
-  line-height: 1.25;
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
-.hero-subtitle {
+.hero h1 strong { color: var(--color-yellow); }
+.hero-desc {
   color: rgba(255,255,255,0.92);
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  margin-bottom: 2.25rem;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
-  line-height: 1.7;
+  font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+  line-height: 1.85;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
-.hero-subtitle strong { color: var(--color-yellow); }
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.hero-btn { font-size: 1.15rem; padding: 0.9rem 2.5rem; }
 
 /* ─── 8. SERVICES GRID ───────────────────────────────────── */
 .services-wrap { padding: var(--section-py) 0; background: var(--color-white); }
@@ -851,7 +853,8 @@ p:last-child { margin-bottom: 0; }
   .header-inner  { min-height: 65px; }
   #mobile-drawer { top: 65px; height: calc(100vh - 65px); }
 
-  .hero          { min-height: 100vh; margin-top: -65px; padding-top: 65px; }
+  .hero          { min-height: 75vh; }
+  .hero-text-box { padding: 2rem 1.5rem; }
   .hero-cta      { flex-direction: column; align-items: center; }
 
   .services-grid { grid-template-columns: repeat(2,1fr); gap: 1rem; }
