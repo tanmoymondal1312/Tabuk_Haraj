@@ -259,9 +259,9 @@ p:last-child { margin-bottom: 0; }
   padding: 2rem var(--pad-x);
 }
 
-/* ── Dark semi-transparent box behind hero text (like cloned site) ── */
+/* ── Dark semi-transparent box behind hero text ── */
 .hero-text-box {
-  background: rgba(34, 34, 34, 0.61);
+  background: rgba(20, 20, 20, 0.38);
   padding: 2.75rem 3rem;
   text-align: center;
   width: 100%;
@@ -772,21 +772,32 @@ p:last-child { margin-bottom: 0; }
 /* ─── 19. WHATSAPP FLOAT ─────────────────────────────────── */
 .whatsapp-float {
   position: fixed;
-  bottom: 30px;
+  bottom: 28px;
   left: 28px;
   z-index: 600;
-  width: 58px; height: 58px;
-  border-radius: 50%;
-  background: #25d366;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  gap: 0.55rem;
+  background: #25d366;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.65rem 1.25rem 0.65rem 0.9rem;
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 22px rgba(37,211,102,0.5);
   transition: transform var(--ease), box-shadow var(--ease);
   animation: wa-pulse 2.5s ease-in-out infinite;
+  direction: rtl;
 }
-.whatsapp-float:hover { transform: scale(1.12); box-shadow: 0 6px 28px rgba(37,211,102,0.7); animation: none; }
-.whatsapp-float svg { width: 33px; height: 33px; color: #fff; }
+.whatsapp-float:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 30px rgba(37,211,102,0.7);
+  animation: none;
+}
+.whatsapp-float svg  { width: 26px; height: 26px; flex-shrink: 0; }
+.whatsapp-float span { font-size: 0.92rem; letter-spacing: 0.01em; }
 
 @keyframes wa-pulse {
   0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
@@ -872,7 +883,8 @@ p:last-child { margin-bottom: 0; }
   .contact-layout { grid-template-columns: 1fr; }
   .location-layout { grid-template-columns: 1fr; }
 
-  .whatsapp-float { bottom: 18px; left: 18px; width: 52px; height: 52px; }
+  .whatsapp-float { bottom: 18px; left: 18px; padding: 0.55rem 1rem 0.55rem 0.75rem; font-size: 0.85rem; }
+  .whatsapp-float svg { width: 22px; height: 22px; }
   #scroll-top     { bottom: 18px; right: 18px; }
   .post-layout    { grid-template-columns: 1fr; }
   .post-content   { padding: 1.5rem; }
