@@ -216,9 +216,11 @@ p:last-child { margin-bottom: 0; }
   color: rgba(255,255,255,0.82);
   font-size: 15px;
   transition: color var(--ease);
+  text-align: left;
+  direction: ltr;
 }
 #mobile-drawer nav ul li a:hover { color: var(--color-primary); }
-#mobile-drawer .drawer-cta { margin-top: auto; }
+#mobile-drawer .drawer-cta { margin-top: 2rem; padding-bottom: 2rem; }
 #mobile-drawer .drawer-cta .btn { width: 100%; justify-content: center; }
 
 .drawer-overlay {
