@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tabukfurnitures.com/
 
-Sitemap: https://tabuk-haraj.com/sitemap.xml
+Sitemap: https://tabukusedfurnitures.shop/sitemap.xml
