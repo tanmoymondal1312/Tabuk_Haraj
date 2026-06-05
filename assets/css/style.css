@@ -82,14 +82,14 @@ p:last-child { margin-bottom: 0; }
 .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 
 .btn-primary {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, #06c49e 0%, #049f82 50%, #037a62 100%);
   color: var(--color-white);
-  border-color: var(--color-primary);
+  border-color: transparent;
 }
 .btn-primary:hover, .btn-primary:focus-visible {
-  background: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  box-shadow: 0 8px 28px rgba(4,159,130,0.38);
+  background: linear-gradient(135deg, #07d6ac 0%, #049f82 50%, #036e58 100%);
+  border-color: transparent;
+  box-shadow: 0 8px 28px rgba(4,159,130,0.42);
   transform: translateY(-2px);
 }
 
