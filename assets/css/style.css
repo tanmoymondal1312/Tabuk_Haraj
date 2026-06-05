@@ -82,12 +82,12 @@ p:last-child { margin-bottom: 0; }
 .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
 
 .btn-primary {
-  background: linear-gradient(135deg, #06c49e 0%, #049f82 50%, #037a62 100%);
+  background: linear-gradient(to right, #06c49e, #037a62);
   color: var(--color-white);
   border-color: transparent;
 }
 .btn-primary:hover, .btn-primary:focus-visible {
-  background: linear-gradient(135deg, #07d6ac 0%, #049f82 50%, #036e58 100%);
+  background: linear-gradient(to right, #07d4aa, #036858);
   border-color: transparent;
   box-shadow: 0 8px 28px rgba(4,159,130,0.42);
   transform: translateY(-2px);
