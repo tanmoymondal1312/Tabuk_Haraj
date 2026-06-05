@@ -244,8 +244,9 @@ p:last-child { margin-bottom: 0; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: auto 100%;   /* height fills section, width follows aspect ratio — no crop */
+  background-repeat: no-repeat;
+  background-position: center center;
   opacity: 0.58;
   will-change: transform;
 }
