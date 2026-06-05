@@ -234,19 +234,19 @@ p:last-child { margin-bottom: 0; }
 /* ─── 7. HERO ────────────────────────────────────────────── */
 .hero {
   position: relative;
-  height: 60vh;       /* fixed — content clips at boundary */
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #0c1e1a;
+  margin: 0 96px;     /* ~1 inch white space on each side on desktop */
 }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: auto 100%;   /* height fills section, width follows aspect ratio — no crop */
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-size: cover;
+  background-position: 50% 50%;
   opacity: 0.58;
   will-change: transform;
 }
@@ -860,7 +860,7 @@ p:last-child { margin-bottom: 0; }
   .header-inner  { min-height: 65px; }
   #mobile-drawer { top: 65px; height: calc(100vh - 65px); }
 
-  .hero          { height: 60vh; }
+  .hero          { height: 60vh; margin: 0; }
   .hero-text-box { padding: 2rem 1.5rem; }
   .hero-cta      { flex-direction: column; align-items: center; }
 
