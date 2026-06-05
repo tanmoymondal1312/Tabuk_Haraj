@@ -77,12 +77,25 @@
       vph.style.display = 'block';
     }
     vid.addEventListener('error', showPlaceholder);
-    /* If src resolves back to the page URL, video isn't set */
     setTimeout(function () {
       if (!vid.src || vid.src === window.location.href || vid.networkState === 3) {
         showPlaceholder();
       }
     }, 500);
+  }
+
+  /* ── Video Autoplay on Scroll ── */
+  if (vid && 'IntersectionObserver' in window) {
+    var videoObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          vid.play().catch(function () {});
+        } else {
+          vid.pause();
+        }
+      });
+    }, { threshold: 0.4 });
+    videoObserver.observe(vid);
   }
 
 })();
