@@ -829,6 +829,20 @@ p:last-child { margin-bottom: 0; }
 
 .footer-logo-img { width: 100%; max-width: 200px; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; display: block; }
 .footer-about-text { font-size: 0.88rem; line-height: 1.75; }
+.footer-social { display: flex; gap: 0.75rem; margin-top: 1rem; }
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.65);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.footer-social-link:hover { background: var(--color-primary); color: #fff; transform: translateY(-2px); }
+.footer-social-link svg { width: 18px; height: 18px; }
 
 .footer-col h4 {
   color: var(--color-white);
