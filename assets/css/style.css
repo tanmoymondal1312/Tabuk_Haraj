@@ -547,13 +547,27 @@ p:last-child { margin-bottom: 0; }
 
 /* ─── 13. PAGE HERO (inner pages) ───────────────────────── */
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 60%, #06b58a 100%);
   color: var(--color-white);
-  padding: 4rem 0 3.5rem;
+  padding: 3.5rem 0 3rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-.page-hero h1 { color: var(--color-white); margin-bottom: 0.5rem; font-size: clamp(1.5rem, 3vw, 2.2rem); }
-.page-hero p  { color: rgba(255,255,255,0.82); margin: 0; font-size: 1.05rem; }
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.page-hero h1 { color: var(--color-white); margin-bottom: 0.6rem; font-size: clamp(1.4rem, 3vw, 2.1rem); text-shadow: 0 2px 8px rgba(0,0,0,0.2); position: relative; }
+.page-hero p  { color: rgba(255,255,255,0.78); margin: 0; font-size: 1rem; position: relative; }
+.page-hero .post-meta-bar { justify-content: center; margin-bottom: 1.2rem; position: relative; }
+.page-hero .post-meta-bar a { color: rgba(255,255,255,0.75); }
+.page-hero .post-meta-bar a:hover { color: #fff; }
+.page-hero .post-meta-bar .sep { color: rgba(255,255,255,0.4); }
+.page-hero .post-meta-bar span:last-child { color: rgba(255,255,255,0.95); font-weight: 600; }
 
 /* ─── 14. BLOG SINGLE POST ───────────────────────────────── */
 .post-layout {
