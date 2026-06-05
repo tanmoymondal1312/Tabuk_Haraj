@@ -856,8 +856,8 @@ p:last-child { margin-bottom: 0; }
 /* ─── 20. SCROLL TO TOP ──────────────────────────────────── */
 #scroll-top {
   position: fixed;
-  bottom: 98px;   /* sits above the WhatsApp circle */
-  right: 28px;
+  bottom: 98px;
+  left: 28px;
   z-index: 600;
   width: 44px; height: 44px;
   border-radius: 50%;
@@ -936,8 +936,8 @@ p:last-child { margin-bottom: 0; }
 
   .whatsapp-float { bottom: 18px; right: 18px; width: 50px; height: 50px; }
   .whatsapp-float svg { width: 28px; height: 28px; }
-  #scroll-top { bottom: 82px; right: 18px; }
-  #scroll-top     { bottom: 18px; right: 18px; }
+  #scroll-top { bottom: 82px; left: 18px; }
+  #scroll-top     { bottom: 18px; left: 18px; }
   .post-layout    { grid-template-columns: 1fr; }
   .post-content   { padding: 1.5rem; }
 }
