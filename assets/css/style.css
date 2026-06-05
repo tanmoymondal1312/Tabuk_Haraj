@@ -815,7 +815,7 @@ p:last-child { margin-bottom: 0; }
   border-bottom: 2px solid var(--color-primary);
   display: inline-block;
 }
-.footer-nav-list li { margin-bottom: 0.55rem; }
+.footer-nav-list li { margin-bottom: 0.55rem; text-align: left; direction: ltr; }
 .footer-nav-list li a {
   color: var(--color-footer-text);
   font-size: 0.88rem;
@@ -823,6 +823,7 @@ p:last-child { margin-bottom: 0; }
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  direction: ltr;
 }
 .footer-nav-list li a::before { content: '›'; color: var(--color-primary); }
 .footer-nav-list li a:hover { color: var(--color-primary); }
