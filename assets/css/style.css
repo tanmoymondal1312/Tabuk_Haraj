@@ -240,7 +240,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: center;
   overflow: hidden;
   background: #0c1e1a;
-  margin: 0 96px;     /* ~1 inch white space on each side on desktop */
+  margin: 0 29px;     /* ~0.3 inch space on each side on desktop */
 }
 .hero-bg {
   position: absolute;
