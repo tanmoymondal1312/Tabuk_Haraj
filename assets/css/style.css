@@ -602,10 +602,11 @@ p:last-child { margin-bottom: 0; }
 .sidebar-card {
   background: var(--color-white);
   border-radius: var(--radius-card);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.75rem;
   box-shadow: var(--shadow-card);
   margin-bottom: 1.5rem;
   border-top: 3px solid var(--color-primary);
+  overflow: hidden;
 }
 .sidebar-card h4 { color: var(--color-primary); margin-bottom: 1rem; font-size: 1rem; }
 .phone-big {
@@ -618,6 +619,7 @@ p:last-child { margin-bottom: 0; }
   text-align: center;
 }
 .sidebar-card .btn { width: 100%; justify-content: center; margin-bottom: 0.75rem; }
+.sidebar-card .btn:last-child { margin-bottom: 0; }
 .sidebar-links { list-style: none; padding: 0; }
 .sidebar-links li { margin-bottom: 0.5rem; }
 .sidebar-links li a { color: var(--color-primary); font-size: 0.88rem; transition: color var(--ease); }
