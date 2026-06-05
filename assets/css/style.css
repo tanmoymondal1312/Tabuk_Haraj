@@ -971,10 +971,27 @@ p:last-child { margin-bottom: 0; }
   :root { --section-py: 2.5rem; }
   body  { font-size: 16px; }
 
-  .primary-nav, .header-cta { display: none; }
+  .primary-nav { display: none; }
   .mobile-toggle { display: flex; }
-  .header-inner  { min-height: 65px; }
+  .header-inner  { min-height: 65px; gap: 0.4rem; }
   #mobile-drawer { top: 65px; height: calc(100vh - 65px); }
+
+  /* Compact logo on mobile */
+  .site-logo img          { width: 34px !important; height: 34px !important; }
+  .logo-text              { font-size: 11px; }
+  .logo-text small        { font-size: 9px; display: block; }
+
+  /* Number plate badge */
+  .header-cta             { display: flex; align-items: center; flex-shrink: 0; }
+  .header-cta .btn        {
+    font-size: 10.5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(4,159,130,0.35);
+  }
 
   .hero          { height: auto; min-height: 72vh; margin: 0; padding-top: 0; padding-bottom: 0.6rem; align-items: flex-start; }
   .hero-content  { padding-top: 0; padding-bottom: 0.5rem; }
