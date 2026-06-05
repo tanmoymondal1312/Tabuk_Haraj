@@ -797,7 +797,6 @@ p:last-child { margin-bottom: 0; }
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
-  padding: var(--section-py) 0;
   align-items: start;
 }
 .location-info-card {
@@ -958,6 +957,8 @@ p:last-child { margin-bottom: 0; }
   .post-layout    { grid-template-columns: 1fr; }
   .post-sidebar   { position: static; }
   .location-layout { grid-template-columns: 1fr; }
+  .location-layout > div { width: 100%; }
+  .map-container iframe { height: 320px; }
   .values-grid    { grid-template-columns: repeat(2,1fr); }
   .stats-row      { grid-template-columns: repeat(3,1fr); }
   .about-intro-grid { grid-template-columns: 1fr; gap: 2.5rem; }
