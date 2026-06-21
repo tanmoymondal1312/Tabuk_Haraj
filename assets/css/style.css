@@ -887,6 +887,22 @@ p:last-child { margin-bottom: 0; }
 }
 .footer-bottom strong { color: rgba(255,255,255,0.65); }
 
+.site-credit {
+  background: rgba(0,0,0,0.45);
+  padding: 0.7rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.02em;
+}
+.site-credit a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.site-credit a:hover { color: var(--color-primary); }
+
 /* ─── 19. WHATSAPP FLOAT ─────────────────────────────────── */
 .whatsapp-float {
   position: fixed;
