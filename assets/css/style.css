@@ -888,20 +888,35 @@ p:last-child { margin-bottom: 0; }
 .footer-bottom strong { color: rgba(255,255,255,0.65); }
 
 .site-credit {
-  background: rgba(0,0,0,0.45);
-  padding: 0.7rem 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 100%);
+  padding: 0.85rem 0;
   text-align: center;
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.35);
-  letter-spacing: 0.02em;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.04em;
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
+.site-credit p { display: inline-flex; align-items: center; gap: 0.4em; margin: 0; }
+.site-credit svg { width: 14px; height: 14px; fill: var(--color-primary); flex-shrink: 0; }
 .site-credit a {
-  color: rgba(255,255,255,0.55);
+  color: var(--color-primary);
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
+  font-weight: 700;
+  transition: all 0.3s;
+  position: relative;
 }
-.site-credit a:hover { color: var(--color-primary); }
+.site-credit a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-primary);
+  transition: width 0.3s;
+}
+.site-credit a:hover { filter: brightness(1.2); }
+.site-credit a:hover::after { width: 100%; }
 
 /* ─── 19. WHATSAPP FLOAT ─────────────────────────────────── */
 .whatsapp-float {
